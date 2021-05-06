@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #f99;
+    font-family: san-serif;
+    font-size: 24px;
+}
+
+.header h1 {
+    font-family: elephant, Arial, georgia;
+    font-size: 3em;
+    text-align: center;
+    word-spacing: -3px;
+}
+
+#slogan {
+    text-align: center;
+    background-color: #000;
+    font-family: "New Cursive", cursive;
+    font-style: oblique;
+    font-size: 16px;
+}
+
+.navbar {
+    background-color: rgba(200, 70, 70, 0.4);
+    margin: 5px;
+    padding: 10px;
+}
