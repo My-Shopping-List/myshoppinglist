@@ -17,6 +17,10 @@ body {
     color: #f00;
 }
 
+.header p {
+    position: relative;
+    margin-top: -20px;
+}
 #slogan {
     text-align: center;
     margin-bottom: 15px;
@@ -26,23 +30,25 @@ body {
     background-color: #000;
     font-family: "New Cursive", cursive;
     font-style: oblique;
-    font-size: 16px;
-    border-radius: 10px;
+    font-size: 18px;
+    border-radius: 7px;
 }
 
 .navbar {
     background-color: rgba(200, 70, 70, 0.4);
     margin: 5px;
-    padding: 10px;
+    padding: 10px auto;
+    margin: 24px;
 }
 
 .navbar ul {
     list-style-type: none;
-    padding: 20px;
+    padding: 20px auto;
 }
 
 .navbar li {
     display: inline;
+    text-align: center;
     text-transform: capitalize;
     padding: 10px;
 }
