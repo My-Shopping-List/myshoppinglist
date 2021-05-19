@@ -9,6 +9,8 @@ body {
 
 .header {
     background-color: #f66;
+    margin: 0;
+    padding: 0;
 }
 
 .header h1 {
@@ -55,11 +57,11 @@ body {
     text-transform: capitalize;
     padding: 24px 10px 24px 10px;
 }
-li a {
+.navbar li a {
     text-decoration: none;
     color: #fff;
 }
-li a:hover {
+.navbar li a:hover {
     background-color: #e91;
     color: #00f;
 }
