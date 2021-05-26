@@ -1,4 +1,4 @@
-.main {
+.main p {
     text-align: left;
     vertical-align: top;
     color: #abf;
@@ -10,6 +10,12 @@
     font-family: monospace;
     margin: 0;
     padding: 0;
+}
+
+h3 {
+    text-align: center;
+    vertical-align: middle;
+    color: #def;
 }
 
 .img {
