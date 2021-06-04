@@ -1,3 +1,6 @@
+/*Stylesheet of My shopping list.*/
+
+/*Body style with no margins and paddings, foreground and background color, and font of the entire website. */
 body {
     margin: 0;
     padding: 0;
@@ -7,14 +10,8 @@ body {
     font-size: 18px;
 }
 
-header {
-    width: 100%;
-    height: 120px;
-    background-image: url("construction.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 130px;
-}
-
+/*font and color style for the header/top of the page.
+Slogan and Navigation: List style with no bulletings, Inline display and some paddings for the Navigation pannel. Cursive font and black bacground for the slogan*/
 .header {
     background-color: #f66;
 }
@@ -51,14 +48,16 @@ header {
 }
 
 .navbar>ul {
-    list-style-type: none;    
+    font-size: 20px;
+    list-style-type: none;
+    padding: 20px 50px;
 }
 
 .navbar li {
     display: inline;
     text-align: center;
     text-transform: capitalize;
-    padding: 24px 10px 24px 10px;
+    padding: 5px;
 }
 .navbar li a {
     text-decoration: none;
@@ -69,6 +68,7 @@ header {
     color: #00f;
 }
 
+/*The contents: Aligned at the center and block-level display for the logo and explore button*/
 .contents {
     background-color: #f00;
     font-family: arial;
@@ -94,6 +94,12 @@ header {
     display: block;
 }
 
+#mylist {
+    margin: 10px auto;
+    border-radius: 20px;
+    box-shadow: offset 2px 3px 5px #ccc, inset -2px -3px 5px #ccc;
+}
+
 #explore {
     margin: 15px auto;
     color: #f77;
@@ -101,8 +107,14 @@ header {
     height: 40px;
     width: 90px;
     border-radius: 15px;
+    text-transform: capitalize;
 }
-
+#explore:hover {
+    color: #00f;
+    background-color: #bea1a9;
+}
+#explore:hover a {color: #ff0;}
+/* Styles for Copyrights and Contact infoemation using the display property and paddings with no margins.*/
 .footer {
     background-color: #000;
     color: #fff;
@@ -115,15 +127,25 @@ header {
     padding: 15px;
 }
 
-.contacts::second-child {
-    margin-left: auto;
-    margin-right: auto;
-}
 #copy { text-align: center;}
 
-@media screen and (max-width: 480px) {
+/* Media queries with width and orientation */
+@media screen and (max-width: 800px) {
     .contacts {
 	display: block;
 	text-align: center;
     }
+#center {
+    display: flex;
+    align-content: center;
+    padding: 5px auto;
+}
+}
+
+@media (orientation: landscape) {
+#center {
+    display: inline;
+    align-content: center;
+    padding: 5px auto;
+}
 }

@@ -1,36 +1,46 @@
+<!--Homepage of My Shopping List-->
+
 <!DOCTYPE html>
 
 <html>
   <head>
+      
+      <!--Managing the  View of the page on different screens and its deacription-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Shopping List is a shopping website that is mainly based on food and clothing products. , Shopping, Clothing, Food, Shorts, Skirts, Drinks, Prices, Cheap Food">
     <title>My Shopping List</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header></header>
+
+<!--Name and Navigation Panel of the page-->    
     <div class="header">
       <h1><a href="index.html">my shopping list</a></h1>
       <p id="slogan"><span>we are here to serve you</span</p>
       <nav class="navbar">
-	<ul>
+	<ul align="center">
 	  <li><a href="index.html">home</a></li>
 	  <li><a href="food.html">food</a></li>
 	  <li><a href="clothing.html">clothing</a></li>
 	</ul>
       </nav>
     </div>
-
+    
+<!-- Main Content and logo and an explore button for the exploration of the page-->
     <div class="contents">
       <h1>my shopping list</h1>
       <p> Your No.1 Online Shopping site in Zambia </p>
-      <img src="/images/logo.jpeg" width="90%" height="110px" alt="My shopping list logo">
-      <button type="custom" align="center" id="explore" formaction="explore.html">Explore</button>
+      <img id="mylist" src="/images/logo.jpeg" width="95%" height="120px" alt="My shopping list logo">
+      <button type="custom" align="center" id="explore" formaction="explore.html"><a href="explore.html" style="text-decoration: none; font-size: 20px; color: #f77;">Explore</a></button>
     </div>
-
+    
+<!-- Contact,Page and  information copyrights-->
     <div class="footer">
+        <div id="center">
       <p class="contacts"><a href="about.html">About Us</a></p>
       <p class="contacts"><a href="tel:+260760882394">Contact us</a></p>
-      <p class="contacts"><a href="mailto:sammyhills19@gmail.com">Email Us</a></p>
+      <p id="right" class="contacts"><a href="mailto:sammyhills19@gmail.com">Email Us</a></p>
+      </div>
       <p id="copy">&copy;Copyrights 2021</p>
     </div>
 
