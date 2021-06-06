@@ -12,8 +12,9 @@ body {
 
 /*font and color style for the header/top of the page.
 Slogan and Navigation: List style with no bulletings, Inline display and some paddings for the Navigation pannel. Cursive font and black bacground for the slogan*/
-.header {
-    background-color: #f66;
+
+.header, .contents {
+    background-color: #d00;
 }
 
 .header h1 {
@@ -23,12 +24,16 @@ Slogan and Navigation: List style with no bulletings, Inline display and some pa
     word-spacing: -3px;
     text-transform: uppercase;
     font-variant: small-caps;
-    color: #f00;
 }
 .header h1 a {
     text-decoration: none;
+    color: #fff;
 }
-
+.header h1 a:hover {
+    color: #f00;
+    background-color: #45e;
+    border-radius: 20px;
+}
 .header p {
     position: relative;
 }
@@ -57,7 +62,7 @@ Slogan and Navigation: List style with no bulletings, Inline display and some pa
     display: inline;
     text-align: center;
     text-transform: capitalize;
-    padding: 5px;
+    padding: 5px auto;
 }
 .navbar li a {
     text-decoration: none;
@@ -70,7 +75,6 @@ Slogan and Navigation: List style with no bulletings, Inline display and some pa
 
 /*The contents: Aligned at the center and block-level display for the logo and explore button*/
 .contents {
-    background-color: #f00;
     font-family: arial;
     text-align: center;
 }
@@ -96,7 +100,7 @@ Slogan and Navigation: List style with no bulletings, Inline display and some pa
 
 #mylist {
     margin: 10px auto;
-    border-radius: 20px;
+    border-radius: 50px;
     box-shadow: offset 2px 3px 5px #ccc, inset -2px -3px 5px #ccc;
 }
 
@@ -129,23 +133,20 @@ Slogan and Navigation: List style with no bulletings, Inline display and some pa
 
 #copy { text-align: center;}
 
-/* Media queries with width and orientation */
-@media screen and (max-width: 800px) {
+/* Media queries with width*/
+@media screen and (min-width: 800px) {
+   #st, #nd, #rd {position: relative;}
+   #st {left: 120px;}
+   #nd {
+        float: right;
+        right: 600px;
+    }
+   #rd {
+        float: right;
+        right: 120px;
+    }
     .contacts {
 	display: block;
 	text-align: center;
     }
-#center {
-    display: flex;
-    align-content: center;
-    padding: 5px auto;
-}
-}
-
-@media (orientation: landscape) {
-#center {
-    display: inline;
-    align-content: center;
-    padding: 5px auto;
-}
 }
